@@ -1,0 +1,1151 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../regras-acoes-rua/">
+      
+      
+        <link rel="next" href="../regras-assalto-caixa-eletronico/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Assalto a Loja - Documentação de Regras (BMI)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#assalto-a-loja" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Documentação de Regras (BMI)" class="md-header__button md-logo" aria-label="Documentação de Regras (BMI)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentação de Regras (BMI)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Assalto a Loja
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Documentação de Regras (BMI)" class="md-nav__button md-logo" aria-label="Documentação de Regras (BMI)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Documentação de Regras (BMI)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Início
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-basicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras Básicas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-gerais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras Gerais
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-cidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras da Cidade
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rp-crianca/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    RP de Criança
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-corporacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Corporação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-faccao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Facção
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-samu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras do SAMU
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-helicoptero/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras – Helicóptero
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-acoes-rua/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Ações/Rua
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Assalto a Loja
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Assalto a Loja
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bandidos-minimo-1-maximo-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      💀 Bandidos: Mínimo 1 | Máximo 10
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#policiais-minimo-1-maximo-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      👮🏼‍♂️ Policiais: Mínimo 1 | Máximo 10
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-o-assalto-a-lojas-pode-ser-feito-com-os-assaltantes-dentro-da-loja-ou-nas-proximidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. ➺ O assalto a lojas pode ser feito com os assaltantes dentro da loja ou nas proximidades.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-devera-permanecer-dentro-da-loja-no-minimo-um-assaltante" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. ➺ Deverá permanecer dentro da loja no mínimo um assaltante.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-os-assaltantes-devem-aguardar-os-policiais-sairem-do-veiculo-para-depois-atirar-neles" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. ➺ Os assaltantes devem aguardar os policiais saírem do veículo para depois atirar neles.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-e-proibida-a-utilizacao-de-helicoptero" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. ➺. É proibida a utilização de helicóptero.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-jogadores-sem-faccao-organizacao-eou-sem-setagem-podem-participar-da-acao-de-roubo-a-loja" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. ➺ Jogadores sem facção, organização e/ou sem setagem podem participar da ação de roubo à loja.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-proibido-atirar-nos-veiculos-que-estao-na-loja" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. ➺. Proibido atirar nos veículos que estão na loja.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-em-caso-de-refem-deve-haver-no-minimo-dois-assaltantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. ➺ Em caso de refém, deve haver no mínimo dois assaltantes.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-se-os-assaltantes-estiverem-com-refem-e-obrigatorio-que-todos-fiquem-dentro-da-loja" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. ➺ Se os assaltantes estiverem com refém, é obrigatório que todos fiquem dentro da loja.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-a-unica-negociacao-permitida-e-sobre-o-tempo-de-fuga-em-troca-da-liberacao-dos-refens" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. ➺ A única negociação permitida é sobre o tempo de fuga em troca da liberação dos reféns.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tempo-de-banimento-em-caso-de-descumprimento-30-minutos-a-6-horas" class="md-nav__link">
+    <span class="md-ellipsis">
+      ↬ Tempo de banimento em caso de descumprimento: 30 minutos a 6 horas.
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-assalto-caixa-eletronico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Assalto a Caixa Eletrônico
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-blitz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Blitz
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-perseguicao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Perseguição
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-emboscadas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Emboscadas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-corrida-ilegal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Corrida Ilegal
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-tunning-ilegal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Tunning Ilegal
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-cracolandia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras Cracolândia
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-banco-central/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras Banco Central
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-invasao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Invasão
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bandidos-minimo-1-maximo-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      💀 Bandidos: Mínimo 1 | Máximo 10
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#policiais-minimo-1-maximo-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      👮🏼‍♂️ Policiais: Mínimo 1 | Máximo 10
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-o-assalto-a-lojas-pode-ser-feito-com-os-assaltantes-dentro-da-loja-ou-nas-proximidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. ➺ O assalto a lojas pode ser feito com os assaltantes dentro da loja ou nas proximidades.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-devera-permanecer-dentro-da-loja-no-minimo-um-assaltante" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. ➺ Deverá permanecer dentro da loja no mínimo um assaltante.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-os-assaltantes-devem-aguardar-os-policiais-sairem-do-veiculo-para-depois-atirar-neles" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. ➺ Os assaltantes devem aguardar os policiais saírem do veículo para depois atirar neles.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-e-proibida-a-utilizacao-de-helicoptero" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. ➺. É proibida a utilização de helicóptero.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-jogadores-sem-faccao-organizacao-eou-sem-setagem-podem-participar-da-acao-de-roubo-a-loja" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. ➺ Jogadores sem facção, organização e/ou sem setagem podem participar da ação de roubo à loja.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-proibido-atirar-nos-veiculos-que-estao-na-loja" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. ➺. Proibido atirar nos veículos que estão na loja.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-em-caso-de-refem-deve-haver-no-minimo-dois-assaltantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. ➺ Em caso de refém, deve haver no mínimo dois assaltantes.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-se-os-assaltantes-estiverem-com-refem-e-obrigatorio-que-todos-fiquem-dentro-da-loja" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. ➺ Se os assaltantes estiverem com refém, é obrigatório que todos fiquem dentro da loja.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-a-unica-negociacao-permitida-e-sobre-o-tempo-de-fuga-em-troca-da-liberacao-dos-refens" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. ➺ A única negociação permitida é sobre o tempo de fuga em troca da liberação dos reféns.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tempo-de-banimento-em-caso-de-descumprimento-30-minutos-a-6-horas" class="md-nav__link">
+    <span class="md-ellipsis">
+      ↬ Tempo de banimento em caso de descumprimento: 30 minutos a 6 horas.
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="assalto-a-loja">Assalto a Loja</h1>
+<div class="highlight"><pre><span></span><code>Este documento detalha as alterações feitas em cada linha do texto original das regras de assalto a loja, explicando mudanças e justificativas de forma técnica e profissional.
+</code></pre></div>
+<hr />
+<h2 id="bandidos-minimo-1-maximo-10"><code>💀 Bandidos: Mínimo 1 | Máximo 10</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Mantido, sem alterações significativas.</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Informações essenciais de número mínimo e máximo de bandidos.</li>
+</ul>
+</div>
+<h2 id="policiais-minimo-1-maximo-10"><code>👮🏼‍♂️  Policiais: Mínimo 1 | Máximo 10</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Mantido, sem alterações significativas.</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Informações essenciais de número mínimo e máximo de policiais.</li>
+</ul>
+</div>
+<h2 id="1-o-assalto-a-lojas-pode-ser-feito-com-os-assaltantes-dentro-da-loja-ou-nas-proximidades"><code>1. ➺ O assalto a lojas pode ser feito com os assaltantes dentro da loja ou nas proximidades.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Reformulado para:<br />
+<code>➺ O assalto a lojas pode ser realizado pelos assaltantes dentro da loja ou nas proximidades.</code></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Ajuste de estilo e formalidade.</li>
+</ul>
+</div>
+<h2 id="2-devera-permanecer-dentro-da-loja-no-minimo-um-assaltante"><code>2. ➺ Deverá permanecer dentro da loja no mínimo um assaltante.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Reformulado para:<br />
+<code>➺ Pelo menos um assaltante deve permanecer dentro da loja.</code></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Clareza, concisão e correção gramatical.</li>
+</ul>
+</div>
+<h2 id="3-os-assaltantes-devem-aguardar-os-policiais-sairem-do-veiculo-para-depois-atirar-neles"><code>3. ➺ Os assaltantes devem aguardar os policiais saírem do veículo para depois atirar neles.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Mantido, pequenas melhorias na pontuação e estilo.</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Clareza sem alterar o significado.</li>
+</ul>
+</div>
+<h2 id="4-e-proibida-a-utilizacao-de-helicoptero"><code>4. ➺. É proibida a utilização de helicóptero.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Reformulado para:<br />
+<code>➺ É proibido utilizar helicópteros na ação.</code></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Remoção de ponto desnecessário e ajuste de formalidade.</li>
+</ul>
+</div>
+<h2 id="5-jogadores-sem-faccao-organizacao-eou-sem-setagem-podem-participar-da-acao-de-roubo-a-loja"><code>5. ➺ Jogadores sem facção, organização e/ou sem setagem podem participar da ação de roubo à loja.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Mantido, apenas ajuste de pontuação.</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Clareza e formalidade.</li>
+</ul>
+</div>
+<h2 id="6-proibido-atirar-nos-veiculos-que-estao-na-loja"><code>6. ➺. Proibido atirar nos veículos que estão na loja.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Reformulado para:<br />
+<code>➺ É proibido atirar nos veículos presentes na loja.</code></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Remoção de ponto desnecessário, correção gramatical.</li>
+</ul>
+</div>
+<h2 id="7-em-caso-de-refem-deve-haver-no-minimo-dois-assaltantes"><code>7. ➺ Em caso de refém, deve haver no mínimo dois assaltantes.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Reformulado para:<br />
+<code>➺ Se houver reféns, deve haver no mínimo dois assaltantes.</code></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Clareza e concisão.</li>
+</ul>
+</div>
+<h2 id="8-se-os-assaltantes-estiverem-com-refem-e-obrigatorio-que-todos-fiquem-dentro-da-loja"><code>8. ➺ Se os assaltantes estiverem com refém, é obrigatório que todos fiquem dentro da loja.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Reformulado para:<br />
+<code>➺ Se os assaltantes tiverem reféns, todos devem permanecer dentro da loja.</code></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Padronização e formalidade.</li>
+</ul>
+</div>
+<h2 id="9-a-unica-negociacao-permitida-e-sobre-o-tempo-de-fuga-em-troca-da-liberacao-dos-refens"><code>9. ➺ A única negociação permitida é sobre o tempo de fuga em troca da liberação dos reféns.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Mantido, apenas pequenas melhorias na pontuação.</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Clareza e padronização.</li>
+</ul>
+</div>
+<h2 id="tempo-de-banimento-em-caso-de-descumprimento-30-minutos-a-6-horas"><code>↬ Tempo de banimento em caso de descumprimento: 30 minutos a 6 horas.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Mantido, ajustes mínimos de pontuação.</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Padronização e consistência visual no documento.</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>

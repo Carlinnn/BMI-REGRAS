@@ -1,0 +1,1364 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../regras-banco-central/">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Regras de Invasão - Documentação de Regras (BMI)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#regras-de-invasao" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Documentação de Regras (BMI)" class="md-header__button md-logo" aria-label="Documentação de Regras (BMI)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentação de Regras (BMI)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Regras de Invasão
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Documentação de Regras (BMI)" class="md-nav__button md-logo" aria-label="Documentação de Regras (BMI)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Documentação de Regras (BMI)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Início
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-basicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras Básicas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-gerais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras Gerais
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-cidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras da Cidade
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rp-crianca/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    RP de Criança
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-corporacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Corporação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-faccao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Facção
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-samu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras do SAMU
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-helicoptero/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras – Helicóptero
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-acoes-rua/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Ações/Rua
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-assalto-loja/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Assalto a Loja
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-assalto-caixa-eletronico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Assalto a Caixa Eletrônico
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-blitz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Blitz
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-perseguicao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Perseguição
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-emboscadas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Emboscadas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-corrida-ilegal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Corrida Ilegal
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-tunning-ilegal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Tunning Ilegal
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-cracolandia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras Cracolândia
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-banco-central/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras Banco Central
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Regras de Invasão
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Invasão
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#facs-para-invadir-minimo-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      💀 Facs para invadir: Mínimo 6
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#facs-para-defender-minimo-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      💀 Facs para Defender: Mínimo 5
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#policiais-para-invadir-minimo-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      👮🏼‍♂️ Policiais para invadir: Mínimo 6
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-permitido-chamar-aliados-para-ajudar-tanto-na-defesa-quanto-na-invasao" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. ➺ Permitido chamar aliados para ajudar tanto na defesa quanto na invasão.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-sempre-deve-esperar-o-ff-antes-de-qualquer-troca-de-tiros" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. ➺ Sempre deve esperar o FF antes de qualquer troca de tiros.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-proibido-entrar-na-favela-com-qualquer-tipo-de-veiculo" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. ➺ Proibido entrar na favela com qualquer tipo de veículo.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-proibido-o-uso-de-helicoptero-durante-a-invasao" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. ➺ Proibido o uso de Helicóptero durante a invasão.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-obrigatorio-avisar-no-twitter-caso-todos-seus-membros-tenham-morrido" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. ➺ Obrigatório avisar no Twitter caso todos seus membros tenham morrido.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-caso-um-dos-lados-ou-um-staff-peca-para-os-vivos-mandar-no-twitter-sera-obrigatorio-todos-mandarem-caso-nao-mande-em-1-minuto-sera-considerado-fora-da-acao" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. ➺ Caso um dos lados ou um staff peça para os vivos mandar “.” no Twitter, será obrigatório todos mandarem, caso não mande em 1 minuto será considerado fora da ação.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-proibido-chegar-apos-o-inicio-da-acao" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. ➺ Proibido chegar após o início da ação.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-caso-morra-por-algum-bug-ou-algum-jogador-de-maneira-errada-e-afirmar-que-possui-provas-podera-retornar-caso-seja-dito-que-possui-provas-e-nao-possui-sera-punido-por-2hrs" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. ➺ Caso morra por algum bug ou algum jogador de maneira errada, e afirmar que possui provas, poderá retornar. Caso seja dito que possui provas e não possui, será punido por 2hrs.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-totalmente-proibido-se-aproximar-do-perimetro-da-favela-apos-morrer-punicao-de-2hrs" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. ➺ Totalmente proibido se aproximar do perímetro da favela após morrer. (Punição de 2hrs)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-acao-com-staff-presente-nao-sera-dada-inicio-caso-nao-possua-o-minimo-5-pessoas-para-defender" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. ➺ Ação com Staff presente não será dada início caso não possua o Minimo (5) pessoas para defender.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-invasao-sem-staff-telando-combinada-nao-tera-o-direito-de-denuncias" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. ➺ Invasão sem staff telando (combinada) não terá o direito de denúncias.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-tempo-maximo-para-invadirdefender-e-30-minutos-nos-5-minutos-finais-e-obrigatorio-rushar-caso-permaneca-parado-o-staff-tem-o-direito-de-tira-lo-da-acao" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. ➺ Tempo máximo para invadir/defender é 30 minutos, nos 5 minutos finais é obrigatório RUSHAR, caso permaneça parado o staff tem o direito de tirá-lo da ação.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-apos-morrer-e-obrigatorio-nascer-no-hospital-spawn-em-base-sujeito-a-1h-de-punicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. ➺ Após morrer é OBRIGATÓRIO nascer no Hospital. (Spawn em Base sujeito a 1h de punição)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-a-fac-perdedora-da-invasao-tera-que-ceder-a-favela-a-fac-vencedora-por-30-minutos" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. ➺ A Fac perdedora da invasão terá que ceder a favela a Fac vencedora por 30 Minutos.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-a-invasao-deve-ser-anunciada-10-minutos-antes-de-comecar-sendo-avisada-pelo-staff-no-chat-quantos-minutos-restam" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. ➺ A invasão deve ser anunciada 10 minutos antes de começar, sendo avisada pelo staff no chat quantos minutos restam.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-caso-alguem-volte-acao-sera-dado-automaticamente-vitoria-para-a-fac-rival-e-o-mesmo-levara-punicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. ➺ Caso alguém volte ação, será dado automaticamente Vitória para a fac rival e o mesmo levará punição.
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#facs-para-invadir-minimo-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      💀 Facs para invadir: Mínimo 6
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#facs-para-defender-minimo-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      💀 Facs para Defender: Mínimo 5
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#policiais-para-invadir-minimo-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      👮🏼‍♂️ Policiais para invadir: Mínimo 6
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-permitido-chamar-aliados-para-ajudar-tanto-na-defesa-quanto-na-invasao" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. ➺ Permitido chamar aliados para ajudar tanto na defesa quanto na invasão.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-sempre-deve-esperar-o-ff-antes-de-qualquer-troca-de-tiros" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. ➺ Sempre deve esperar o FF antes de qualquer troca de tiros.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-proibido-entrar-na-favela-com-qualquer-tipo-de-veiculo" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. ➺ Proibido entrar na favela com qualquer tipo de veículo.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-proibido-o-uso-de-helicoptero-durante-a-invasao" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. ➺ Proibido o uso de Helicóptero durante a invasão.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-obrigatorio-avisar-no-twitter-caso-todos-seus-membros-tenham-morrido" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. ➺ Obrigatório avisar no Twitter caso todos seus membros tenham morrido.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-caso-um-dos-lados-ou-um-staff-peca-para-os-vivos-mandar-no-twitter-sera-obrigatorio-todos-mandarem-caso-nao-mande-em-1-minuto-sera-considerado-fora-da-acao" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. ➺ Caso um dos lados ou um staff peça para os vivos mandar “.” no Twitter, será obrigatório todos mandarem, caso não mande em 1 minuto será considerado fora da ação.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-proibido-chegar-apos-o-inicio-da-acao" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. ➺ Proibido chegar após o início da ação.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-caso-morra-por-algum-bug-ou-algum-jogador-de-maneira-errada-e-afirmar-que-possui-provas-podera-retornar-caso-seja-dito-que-possui-provas-e-nao-possui-sera-punido-por-2hrs" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. ➺ Caso morra por algum bug ou algum jogador de maneira errada, e afirmar que possui provas, poderá retornar. Caso seja dito que possui provas e não possui, será punido por 2hrs.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-totalmente-proibido-se-aproximar-do-perimetro-da-favela-apos-morrer-punicao-de-2hrs" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. ➺ Totalmente proibido se aproximar do perímetro da favela após morrer. (Punição de 2hrs)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-acao-com-staff-presente-nao-sera-dada-inicio-caso-nao-possua-o-minimo-5-pessoas-para-defender" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. ➺ Ação com Staff presente não será dada início caso não possua o Minimo (5) pessoas para defender.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-invasao-sem-staff-telando-combinada-nao-tera-o-direito-de-denuncias" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. ➺ Invasão sem staff telando (combinada) não terá o direito de denúncias.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-tempo-maximo-para-invadirdefender-e-30-minutos-nos-5-minutos-finais-e-obrigatorio-rushar-caso-permaneca-parado-o-staff-tem-o-direito-de-tira-lo-da-acao" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. ➺ Tempo máximo para invadir/defender é 30 minutos, nos 5 minutos finais é obrigatório RUSHAR, caso permaneça parado o staff tem o direito de tirá-lo da ação.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-apos-morrer-e-obrigatorio-nascer-no-hospital-spawn-em-base-sujeito-a-1h-de-punicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. ➺ Após morrer é OBRIGATÓRIO nascer no Hospital. (Spawn em Base sujeito a 1h de punição)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-a-fac-perdedora-da-invasao-tera-que-ceder-a-favela-a-fac-vencedora-por-30-minutos" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. ➺ A Fac perdedora da invasão terá que ceder a favela a Fac vencedora por 30 Minutos.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-a-invasao-deve-ser-anunciada-10-minutos-antes-de-comecar-sendo-avisada-pelo-staff-no-chat-quantos-minutos-restam" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. ➺ A invasão deve ser anunciada 10 minutos antes de começar, sendo avisada pelo staff no chat quantos minutos restam.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-caso-alguem-volte-acao-sera-dado-automaticamente-vitoria-para-a-fac-rival-e-o-mesmo-levara-punicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. ➺ Caso alguém volte ação, será dado automaticamente Vitória para a fac rival e o mesmo levará punição.
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="regras-de-invasao">Regras de Invasão</h1>
+<div class="highlight"><pre><span></span><code>Este documento detalha as alterações feitas em cada linha do texto original das regras de invasão, explicando mudanças e justificativas de forma técnica e profissional.
+</code></pre></div>
+<hr />
+<h2 id="facs-para-invadir-minimo-6"><code>💀 Facs para invadir: Mínimo 6</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Mantido, sem alterações significativas.</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Informação essencial sobre o número mínimo de facções para invadir.</li>
+</ul>
+</div>
+<h2 id="facs-para-defender-minimo-5"><code>💀 Facs para Defender: Mínimo 5</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Mantido, sem alterações significativas.</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Informação essencial sobre o número mínimo de facções para defender.</li>
+</ul>
+</div>
+<h2 id="policiais-para-invadir-minimo-6"><code>👮🏼‍♂️  Policiais para invadir: Mínimo 6</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Mantido, sem alterações significativas.</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Informação sobre o número mínimo de policiais para invadir.</li>
+</ul>
+</div>
+<h2 id="1-permitido-chamar-aliados-para-ajudar-tanto-na-defesa-quanto-na-invasao"><code>1. ➺ Permitido chamar aliados para ajudar tanto na defesa quanto na invasão.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Reformulado para:
+    <code>➺ É permitido convocar aliados para auxiliar tanto na defesa quanto na invasão.</code></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Ajuste de clareza e formalidade.</li>
+</ul>
+</div>
+<h2 id="2-sempre-deve-esperar-o-ff-antes-de-qualquer-troca-de-tiros"><code>2. ➺ Sempre deve esperar o FF antes de qualquer troca de tiros.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Mantido, sem alterações significativas.</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Cláusula essencial para garantir segurança e organização da ação.</li>
+</ul>
+</div>
+<h2 id="3-proibido-entrar-na-favela-com-qualquer-tipo-de-veiculo"><code>3. ➺ Proibido entrar na favela com qualquer tipo de veículo.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Mantido, sem alterações significativas.</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Restrição de segurança e padronização da invasão.</li>
+</ul>
+</div>
+<h2 id="4-proibido-o-uso-de-helicoptero-durante-a-invasao"><code>4. ➺ Proibido o uso de Helicóptero durante a invasão.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Mantido, sem alterações significativas.</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Evitar vantagem desleal durante a ação.</li>
+</ul>
+</div>
+<h2 id="5-obrigatorio-avisar-no-twitter-caso-todos-seus-membros-tenham-morrido"><code>5. ➺ Obrigatório avisar no Twitter caso todos seus membros tenham morrido.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Mantido, ajustes mínimos de pontuação.</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Garantir comunicação adequada durante a invasão.</li>
+</ul>
+</div>
+<h2 id="6-caso-um-dos-lados-ou-um-staff-peca-para-os-vivos-mandar-no-twitter-sera-obrigatorio-todos-mandarem-caso-nao-mande-em-1-minuto-sera-considerado-fora-da-acao"><code>6. ➺ Caso um dos lados ou um staff peça para os vivos mandar “.” no Twitter, será obrigatório todos mandarem, caso não mande em 1 minuto será considerado fora da ação.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Reformulado para:
+    <code>➺ Se solicitado por um staff ou pelo outro lado, todos os vivos devem enviar "." no Twitter dentro de 1 minuto; caso contrário, serão considerados fora da ação.</code></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Ajuste de clareza e padronização.</li>
+</ul>
+</div>
+<h2 id="7-proibido-chegar-apos-o-inicio-da-acao"><code>7. ➺ Proibido chegar após o início da ação.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Mantido, sem alterações significativas.</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Cláusula essencial para integridade da invasão.</li>
+</ul>
+</div>
+<h2 id="8-caso-morra-por-algum-bug-ou-algum-jogador-de-maneira-errada-e-afirmar-que-possui-provas-podera-retornar-caso-seja-dito-que-possui-provas-e-nao-possui-sera-punido-por-2hrs"><code>8. ➺ Caso morra por algum bug ou algum jogador de maneira errada, e afirmar que possui provas, poderá retornar. Caso seja dito que possui provas e não possui, será punido por 2hrs.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Reformulado para:
+    <code>➺ Se morrer devido a bug ou ação incorreta de outro jogador, poderá retornar mediante apresentação de provas; falsas alegações resultarão em punição de 2 horas.</code></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Maior clareza e formalidade.</li>
+</ul>
+</div>
+<h2 id="9-totalmente-proibido-se-aproximar-do-perimetro-da-favela-apos-morrer-punicao-de-2hrs"><code>9. ➺ Totalmente proibido se aproximar do perímetro da favela após morrer. (Punição de 2hrs)</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Mantido, ajustes mínimos de pontuação.</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Garantir integridade da ação e evitar exploits.</li>
+</ul>
+</div>
+<h2 id="10-acao-com-staff-presente-nao-sera-dada-inicio-caso-nao-possua-o-minimo-5-pessoas-para-defender"><code>10. ➺ Ação com Staff presente não será dada início caso não possua o Minimo (5) pessoas para defender.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Reformulado para:
+    <code>➺ A invasão com staff presente não iniciará caso não haja pelo menos 5 pessoas para defender.</code></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Ajuste de clareza e formalidade.</li>
+</ul>
+</div>
+<h2 id="11-invasao-sem-staff-telando-combinada-nao-tera-o-direito-de-denuncias"><code>11. ➺ Invasão sem staff telando (combinada) não terá o direito de denúncias.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Mantido, sem alterações significativas.</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Cláusula essencial de regra de denúncia.</li>
+</ul>
+</div>
+<h2 id="12-tempo-maximo-para-invadirdefender-e-30-minutos-nos-5-minutos-finais-e-obrigatorio-rushar-caso-permaneca-parado-o-staff-tem-o-direito-de-tira-lo-da-acao"><code>12. ➺ Tempo máximo para invadir/defender é 30 minutos, nos 5 minutos finais é obrigatório RUSHAR, caso permaneça parado o staff tem o direito de tirá-lo da ação.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Mantido, ajustes mínimos de pontuação.</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Claridade no tempo máximo da ação.</li>
+</ul>
+</div>
+<h2 id="13-apos-morrer-e-obrigatorio-nascer-no-hospital-spawn-em-base-sujeito-a-1h-de-punicao"><code>13. ➺ Após morrer é OBRIGATÓRIO nascer no Hospital. (Spawn em Base sujeito a 1h de punição)</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Mantido, sem alterações significativas.</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Garantir regras de respawn.</li>
+</ul>
+</div>
+<h2 id="14-a-fac-perdedora-da-invasao-tera-que-ceder-a-favela-a-fac-vencedora-por-30-minutos"><code>14. ➺ A Fac perdedora da invasão terá que ceder a favela a Fac vencedora por 30 Minutos.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Mantido, ajustes mínimos de pontuação.</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Garantir consequência da invasão.</li>
+</ul>
+</div>
+<h2 id="15-a-invasao-deve-ser-anunciada-10-minutos-antes-de-comecar-sendo-avisada-pelo-staff-no-chat-quantos-minutos-restam"><code>15. ➺ A invasão deve ser anunciada 10 minutos antes de começar, sendo avisada pelo staff no chat quantos minutos restam.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Mantido, sem alterações significativas.</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Cláusula essencial de aviso prévio.</li>
+</ul>
+</div>
+<h2 id="16-caso-alguem-volte-acao-sera-dado-automaticamente-vitoria-para-a-fac-rival-e-o-mesmo-levara-punicao"><code>16. ➺ Caso alguém volte ação, será dado automaticamente Vitória para a fac rival e o mesmo levará punição.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Mantido, ajustes mínimos de pontuação.</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Garantir integridade e penalidade da ação.</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,990 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+        <link rel="next" href="regras-basicas/">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Documentação de Regras (BMI)</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.7e37652d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#documentacao-tecnica-das-regras" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Documentação de Regras (BMI)" class="md-header__button md-logo" aria-label="Documentação de Regras (BMI)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentação de Regras (BMI)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Início
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Documentação de Regras (BMI)" class="md-nav__button md-logo" aria-label="Documentação de Regras (BMI)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Documentação de Regras (BMI)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Início
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Início
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ferramentas-utilizadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ferramentas Utilizadas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#praticas-de-linguagem-portuguesa-aplicadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Práticas de Linguagem Portuguesa Aplicadas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#processo-de-modificacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Processo de Modificação
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Processo de Modificação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#etapas-do-processo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Etapas do Processo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resultado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resultado
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="regras-basicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras Básicas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="regras-gerais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras Gerais
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="regras-cidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras da Cidade
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="rp-crianca/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    RP de Criança
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="regras-corporacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Corporação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="regras-faccao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Facção
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="regras-samu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras do SAMU
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="regras-helicoptero/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras – Helicóptero
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="regras-acoes-rua/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Ações/Rua
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="regras-assalto-loja/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Assalto a Loja
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="regras-assalto-caixa-eletronico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Assalto a Caixa Eletrônico
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="regras-blitz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Blitz
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="regras-perseguicao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Perseguição
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="regras-emboscadas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Emboscadas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="regras-corrida-ilegal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Corrida Ilegal
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="regras-tunning-ilegal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Tunning Ilegal
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="regras-cracolandia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras Cracolândia
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="regras-banco-central/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras Banco Central
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="regras-invasao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Invasão
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ferramentas-utilizadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ferramentas Utilizadas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#praticas-de-linguagem-portuguesa-aplicadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Práticas de Linguagem Portuguesa Aplicadas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#processo-de-modificacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Processo de Modificação
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Processo de Modificação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#etapas-do-processo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Etapas do Processo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resultado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resultado
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="documentacao-tecnica-das-regras">Documentação Técnica das Regras</h1>
+<div class="highlight"><pre><span></span><code>Este documento detalha as alterações feitas nas regras, as práticas linguísticas aplicadas, as ferramentas utilizadas e o processo técnico seguido para padronizar e melhorar as regras do projeto.
+</code></pre></div>
+<hr />
+<h2 id="ferramentas-utilizadas">Ferramentas Utilizadas</h2>
+<ul>
+<li><strong>Python</strong>: Versão 3.10.6</li>
+<li><strong>Virtual Environment (venv)</strong>: Configurado para isolar dependências do projeto.</li>
+<li><strong>MkDocs</strong>: Ferramenta para geração de documentação estática.</li>
+<li><strong>MkDocs Material</strong>: Tema utilizado para estilização e suporte a diagramas.</li>
+<li><strong>Extensões Markdown</strong>:</li>
+<li><code>pymdownx.superfences</code>: Suporte para diagramas Mermaid.js.</li>
+<li><code>pymdownx.details</code>: Adição de detalhes expansíveis.</li>
+<li><code>pymdownx.emoji</code>: Suporte para emojis.</li>
+</ul>
+<h2 id="praticas-de-linguagem-portuguesa-aplicadas">Práticas de Linguagem Portuguesa Aplicadas</h2>
+<ol>
+<li><strong>Clarificação de Termos</strong>:</li>
+<li>Substituição de abreviações e gírias por termos formais (ex.: "pm" → "policiais em serviço").</li>
+<li>
+<p>Padronização de termos como "área safe" → "área segura".</p>
+</li>
+<li>
+<p><strong>Padronização de Estrutura</strong>:</p>
+</li>
+<li>Uniformização de tempos e medidas (ex.: "30 minutos a 6 horas").</li>
+<li>
+<p>Organização lógica das regras.</p>
+</li>
+<li>
+<p><strong>Ajuste de Formalidade</strong>:</p>
+</li>
+<li>Reformulação de frases para evitar ambiguidades.</li>
+<li>
+<p>Uso de linguagem direta e objetiva.</p>
+</li>
+<li>
+<p><strong>Inclusão de Justificativas</strong>:</p>
+</li>
+<li>Explicação técnica para cada alteração realizada.</li>
+</ol>
+<h2 id="processo-de-modificacao">Processo de Modificação</h2>
+<pre class="mermaid"><code>graph TD
+  A[Análise das Regras Originais] --&gt; B[Identificação de Problemas]
+  B --&gt; C[Classificação de Alterações Necessárias]
+  C --&gt; D[Aplicação das Alterações Linha a Linha]
+  D --&gt; E[Padronização do Documento]
+  E --&gt; F[Resultado Final]</code></pre>
+<h3 id="etapas-do-processo">Etapas do Processo</h3>
+<ol>
+<li><strong>Análise das Regras Originais</strong>:</li>
+<li>
+<p>Identificação de inconsistências e ambiguidades.</p>
+</li>
+<li>
+<p><strong>Identificação de Problemas</strong>:</p>
+</li>
+<li>Linguagem informal ou ambígua.</li>
+<li>Falta de padronização em medidas e tempos.</li>
+<li>
+<p>Inconsistências nos termos utilizados.</p>
+</li>
+<li>
+<p><strong>Classificação de Alterações Necessárias</strong>:</p>
+</li>
+<li>Clarificação de termos.</li>
+<li>Ajuste de formalidade.</li>
+<li>
+<p>Inclusão de justificativas.</p>
+</li>
+<li>
+<p><strong>Aplicação das Alterações Linha a Linha</strong>:</p>
+</li>
+<li>Revisão e reformulação de cada regra.</li>
+<li>
+<p>Manutenção de regras claras e corretas.</p>
+</li>
+<li>
+<p><strong>Padronização do Documento</strong>:</p>
+</li>
+<li>Uso de Markdown com estrutura consistente.</li>
+<li>
+<p>Uniformidade em todos os tipos de regras.</p>
+</li>
+<li>
+<p><strong>Resultado Final</strong>:</p>
+</li>
+<li>Regras claras, formais e padronizadas.</li>
+<li>Fácil leitura e interpretação.</li>
+<li>Compatível com integração em sistemas de RPG.</li>
+</ol>
+<h2 id="resultado">Resultado</h2>
+<ul>
+<li><strong>Regras Padronizadas</strong>:</li>
+<li>RP Criança, Facção, Corporação, Assaltos, Blitz, Perseguição, Emboscadas, entre outras.</li>
+<li><strong>Documentação Técnica</strong>:</li>
+<li>Estrutura clara e consistente.</li>
+<li>Justificativas detalhadas para cada alteração.</li>
+<li><strong>Compatibilidade</strong>:</li>
+<li>Integração com Discord e sistemas de RPG.</li>
+</ul>
+<hr />
+<pre class="mermaid"><code>stateDiagram-v2
+  state fork_state &lt;&lt;fork&gt;&gt;
+    [*] --&gt; fork_state: Início do Processo
+    fork_state --&gt; State2: Análise das Regras Originais
+    fork_state --&gt; State3: Identificação de Problemas
+
+    state join_state &lt;&lt;join&gt;&gt;
+    State2 --&gt; join_state: Problemas Identificados
+    State3 --&gt; join_state: Problemas Classificados
+    join_state --&gt; State4: Aplicação das Alterações
+    State4 --&gt; State5: Padronização do Documento
+    State5 --&gt; [*]: Processo Concluído
+
+    %% Adicionando mais detalhes para cada estado
+    State2: Identificação de inconsistências e ambiguidades
+    State3: Classificação de ajustes necessários
+    State4: Revisão e reformulação linha a linha
+    State5: Uniformidade e clareza alcançadas</code></pre>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>
