@@ -1,0 +1,1409 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../regras-perseguicao/">
+      
+      
+        <link rel="next" href="../regras-corrida-ilegal/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Regras de Emboscadas - Documentação de Regras (BMI)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#regras-de-emboscadas" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Documentação de Regras (BMI)" class="md-header__button md-logo" aria-label="Documentação de Regras (BMI)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentação de Regras (BMI)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Regras de Emboscadas
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Documentação de Regras (BMI)" class="md-nav__button md-logo" aria-label="Documentação de Regras (BMI)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Documentação de Regras (BMI)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Início
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-basicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras Básicas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-gerais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras Gerais
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-cidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras da Cidade
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rp-crianca/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    RP de Criança
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-corporacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Corporação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-faccao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Facção
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-samu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras do SAMU
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-helicoptero/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras – Helicóptero
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-acoes-rua/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Ações/Rua
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-assalto-loja/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Assalto a Loja
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-assalto-caixa-eletronico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Assalto a Caixa Eletrônico
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-blitz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Blitz
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-perseguicao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Perseguição
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Regras de Emboscadas
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Emboscadas
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-proibido-realizar-em-areas-safes-somente-permitido-fazer-emboscada-no-galpao-ls-rua-do-s-ls-e-estacionamento-emerald-lv" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. ➺ Proibido realizar em áreas safes, somente permitido fazer emboscada no Galpão (LS), Rua do S (LS) e Estacionamento Emerald (LV).
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-proibido-chamar-radinho-apos-o-comeco-da-acao" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. ➺ Proibido chamar radinho após o começo da ação.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-mandar-bind-de-emboscada-somente-antes-de-chegar-ao-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. ➺ Mandar bind de emboscada, somente antes de chegar ao local.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-permitido-realizar-emboscada-com-pms" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. ➺ Permitido realizar emboscada com PM’s.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-permitido-intervencao-da-policia-no-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. ➺ Permitido intervenção da polícia no local.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-proibido-matar-apos-a-bind-ser-enviada-somente-no-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. ➺ Proibido matar após a bind ser enviada, somente no local.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-proibido-cancelar-a-acao-no-meio-dela-sendo-somente-em-caso-de-intervencao-maiores-staffsamu-no-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. ➺ Proibido cancelar a ação no meio dela, sendo somente em caso de intervenção maiores (staff/samu no local).
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-proibido-chamar-samu-morto-eou-quando-a-acao-nao-tiver-acabado-caso-tenha-algum-problema-chamar-staff-e-pausarrecomecar-a-acao" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. ➺ Proibido chamar samu morto e/ou quando a ação não tiver acabado. Caso tenha algum problema, chamar staff e pausar/recomeçar a ação.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-permitido-chamar-reforco-em-caso-de-nao-ter-comunicacao-cortada-eou-ainda-nao-estar-no-local-sendo-necessario-utilizar-bind-que-tambem-chamou-a-tropa" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. ➺ Permitido chamar reforço em caso de não ter comunicação cortada e/ou ainda não estar no local. Sendo necessário utilizar bind que também chamou a tropa.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-apos-a-acao-ser-finalizada-esperar-entre-10-a-15-minutos-para-realizar-uma-nova-emboscada" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. ➺ Após a ação ser finalizada, esperar entre 10 á 15 minutos para realizar uma nova emboscada;
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-permitido-somente-fazer-emboscada-apos-3-minutos-apos-uma-acao-comecar" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. ➺ Permitido somente fazer emboscada após 3 minutos após uma ação começar.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-proibido-subirusar-as-favelas-de-faccoes-podendo-somente-em-lugares-ja-determinados" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. ➺ Proibido subir/usar as favelas de facções, podendo somente em lugares já determinados.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-permitido-roubar-somente-apos-finalizado-a-acao-e-enquanto-o-samu-ainda-nao-tiver-chegado" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. ➺ Permitido roubar somente após finalizado a ação e enquanto o samu ainda não tiver chegado.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-proibido-emboscada-com-refens-priorizando-a-vida-do-mesmo-negociar-antes-fugatirodinheiro" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. ➺ Proibido emboscada, com reféns, priorizando a vida do mesmo. (Negociar antes Fuga/Tiro/Dinheiro.)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-proibido-emboscada-com-mecanicos-que-estejam-fardados-e-com-o-caminhao" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. ➺ Proibido emboscada com Mecânicos que estejam fardados e com o caminhão.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-proibido-pm-fazer-emboscada-somente-chamar-qrr" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. ➺ Proibido PM fazer emboscada, somente chamar QRR.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-obrigatorio-o-uso-de-binds-para-chamar-tropa-bem-antes-de-chegar-ao-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      17. ➺ Obrigatório o uso de binds para chamar tropa bem antes de chegar ao local.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-proibido-chamar-ajuda-pelo-twitter-ou-anonimo-permitido-usar-apenas-radinho" class="md-nav__link">
+    <span class="md-ellipsis">
+      18. ➺ Proibido chamar ajuda pelo twitter ou anônimo, permitido usar apenas radinho
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-proibido-chegar-reforco-apos-a-acao-ter-iniciado" class="md-nav__link">
+    <span class="md-ellipsis">
+      19. ➺ Proibido chegar reforço após a ação ter iniciado.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tempo-de-banimento-em-caso-de-descumprimento-30-minutos-a-24-horas" class="md-nav__link">
+    <span class="md-ellipsis">
+      ↬ Tempo de banimento em caso de descumprimento: 30 minutos a 24 horas.
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-corrida-ilegal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Corrida Ilegal
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-tunning-ilegal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Tunning Ilegal
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-cracolandia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras Cracolândia
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-banco-central/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras Banco Central
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regras-invasao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regras de Invasão
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-proibido-realizar-em-areas-safes-somente-permitido-fazer-emboscada-no-galpao-ls-rua-do-s-ls-e-estacionamento-emerald-lv" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. ➺ Proibido realizar em áreas safes, somente permitido fazer emboscada no Galpão (LS), Rua do S (LS) e Estacionamento Emerald (LV).
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-proibido-chamar-radinho-apos-o-comeco-da-acao" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. ➺ Proibido chamar radinho após o começo da ação.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-mandar-bind-de-emboscada-somente-antes-de-chegar-ao-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. ➺ Mandar bind de emboscada, somente antes de chegar ao local.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-permitido-realizar-emboscada-com-pms" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. ➺ Permitido realizar emboscada com PM’s.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-permitido-intervencao-da-policia-no-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. ➺ Permitido intervenção da polícia no local.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-proibido-matar-apos-a-bind-ser-enviada-somente-no-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. ➺ Proibido matar após a bind ser enviada, somente no local.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-proibido-cancelar-a-acao-no-meio-dela-sendo-somente-em-caso-de-intervencao-maiores-staffsamu-no-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. ➺ Proibido cancelar a ação no meio dela, sendo somente em caso de intervenção maiores (staff/samu no local).
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-proibido-chamar-samu-morto-eou-quando-a-acao-nao-tiver-acabado-caso-tenha-algum-problema-chamar-staff-e-pausarrecomecar-a-acao" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. ➺ Proibido chamar samu morto e/ou quando a ação não tiver acabado. Caso tenha algum problema, chamar staff e pausar/recomeçar a ação.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-permitido-chamar-reforco-em-caso-de-nao-ter-comunicacao-cortada-eou-ainda-nao-estar-no-local-sendo-necessario-utilizar-bind-que-tambem-chamou-a-tropa" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. ➺ Permitido chamar reforço em caso de não ter comunicação cortada e/ou ainda não estar no local. Sendo necessário utilizar bind que também chamou a tropa.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-apos-a-acao-ser-finalizada-esperar-entre-10-a-15-minutos-para-realizar-uma-nova-emboscada" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. ➺ Após a ação ser finalizada, esperar entre 10 á 15 minutos para realizar uma nova emboscada;
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-permitido-somente-fazer-emboscada-apos-3-minutos-apos-uma-acao-comecar" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. ➺ Permitido somente fazer emboscada após 3 minutos após uma ação começar.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-proibido-subirusar-as-favelas-de-faccoes-podendo-somente-em-lugares-ja-determinados" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. ➺ Proibido subir/usar as favelas de facções, podendo somente em lugares já determinados.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-permitido-roubar-somente-apos-finalizado-a-acao-e-enquanto-o-samu-ainda-nao-tiver-chegado" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. ➺ Permitido roubar somente após finalizado a ação e enquanto o samu ainda não tiver chegado.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-proibido-emboscada-com-refens-priorizando-a-vida-do-mesmo-negociar-antes-fugatirodinheiro" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. ➺ Proibido emboscada, com reféns, priorizando a vida do mesmo. (Negociar antes Fuga/Tiro/Dinheiro.)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-proibido-emboscada-com-mecanicos-que-estejam-fardados-e-com-o-caminhao" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. ➺ Proibido emboscada com Mecânicos que estejam fardados e com o caminhão.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-proibido-pm-fazer-emboscada-somente-chamar-qrr" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. ➺ Proibido PM fazer emboscada, somente chamar QRR.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-obrigatorio-o-uso-de-binds-para-chamar-tropa-bem-antes-de-chegar-ao-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      17. ➺ Obrigatório o uso de binds para chamar tropa bem antes de chegar ao local.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-proibido-chamar-ajuda-pelo-twitter-ou-anonimo-permitido-usar-apenas-radinho" class="md-nav__link">
+    <span class="md-ellipsis">
+      18. ➺ Proibido chamar ajuda pelo twitter ou anônimo, permitido usar apenas radinho
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-proibido-chegar-reforco-apos-a-acao-ter-iniciado" class="md-nav__link">
+    <span class="md-ellipsis">
+      19. ➺ Proibido chegar reforço após a ação ter iniciado.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tempo-de-banimento-em-caso-de-descumprimento-30-minutos-a-24-horas" class="md-nav__link">
+    <span class="md-ellipsis">
+      ↬ Tempo de banimento em caso de descumprimento: 30 minutos a 24 horas.
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="regras-de-emboscadas">Regras de Emboscadas</h1>
+<div class="highlight"><pre><span></span><code>Este documento detalha as alterações feitas em cada linha do texto original das regras de emboscadas, explicando mudanças e justificativas de forma técnica e profissional.
+</code></pre></div>
+<hr />
+<h2 id="1-proibido-realizar-em-areas-safes-somente-permitido-fazer-emboscada-no-galpao-ls-rua-do-s-ls-e-estacionamento-emerald-lv"><code>1. ➺ Proibido realizar em áreas safes, somente permitido fazer emboscada no Galpão (LS), Rua do S (LS) e Estacionamento Emerald (LV).</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Reformulado para:<br />
+<code>➺ É proibido realizar emboscadas em áreas seguras (safe zones). Permitido apenas nos locais designados: Galpão (LS), Rua do S (LS) e Estacionamento Emerald (LV).</code></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Maior formalidade, clareza e padronização de termos de área segura.</li>
+</ul>
+</div>
+<h2 id="2-proibido-chamar-radinho-apos-o-comeco-da-acao"><code>2. ➺ Proibido chamar radinho após o começo da ação.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Reformulado para:<br />
+<code>➺ Não é permitido acionar rádios de comunicação após o início da ação.</code></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Padronização e formalidade na instrução.</li>
+</ul>
+</div>
+<h2 id="3-mandar-bind-de-emboscada-somente-antes-de-chegar-ao-local"><code>3. ➺ Mandar bind de emboscada, somente antes de chegar ao local.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Reformulado para:<br />
+<code>➺ O bind de emboscada deve ser enviado apenas antes de chegar ao local da ação.</code></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Ajuste de clareza e gramática.</li>
+</ul>
+</div>
+<h2 id="4-permitido-realizar-emboscada-com-pms"><code>4. ➺ Permitido realizar emboscada com PM’s.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Reformulado para:<br />
+<code>➺ É permitido realizar emboscadas em conjunto com policiais militares presentes.</code></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Maior clareza e formalidade.</li>
+</ul>
+</div>
+<h2 id="5-permitido-intervencao-da-policia-no-local"><code>5. ➺ Permitido intervenção da polícia no local.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Reformulado para:<br />
+<code>➺ A polícia pode intervir na emboscada se estiver presente no local.</code></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Ajuste de clareza e linguagem formal.</li>
+</ul>
+</div>
+<h2 id="6-proibido-matar-apos-a-bind-ser-enviada-somente-no-local"><code>6. ➺ Proibido matar após a bind ser enviada, somente no local.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Reformulado para:<br />
+<code>➺ Não é permitido eliminar alvos após enviar o bind; disparos só podem ocorrer no local da emboscada.</code></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Clarificação da regra, garantindo compreensão precisa da ação permitida.</li>
+</ul>
+</div>
+<h2 id="7-proibido-cancelar-a-acao-no-meio-dela-sendo-somente-em-caso-de-intervencao-maiores-staffsamu-no-local"><code>7. ➺ Proibido cancelar a ação no meio dela, sendo somente em caso de intervenção maiores (staff/samu no local).</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Reformulado para:<br />
+<code>➺ O cancelamento da ação é proibido, exceto em casos de intervenção significativa por staff ou SAMU no local.</code></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Padronização e clareza da exceção.</li>
+</ul>
+</div>
+<h2 id="8-proibido-chamar-samu-morto-eou-quando-a-acao-nao-tiver-acabado-caso-tenha-algum-problema-chamar-staff-e-pausarrecomecar-a-acao"><code>8. ➺ Proibido chamar samu morto e/ou quando a ação não tiver acabado. Caso tenha algum problema, chamar staff e pausar/recomeçar a ação.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Reformulado para:<br />
+<code>➺ É proibido acionar o SAMU para jogadores mortos ou antes do término da ação. Em caso de problema, contate o staff para pausar ou reiniciar a ação.</code></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Maior formalidade e clareza da instrução.</li>
+</ul>
+</div>
+<h2 id="9-permitido-chamar-reforco-em-caso-de-nao-ter-comunicacao-cortada-eou-ainda-nao-estar-no-local-sendo-necessario-utilizar-bind-que-tambem-chamou-a-tropa"><code>9. ➺ Permitido chamar reforço em caso de não ter comunicação cortada e/ou ainda não estar no local. Sendo necessário utilizar bind que também chamou a tropa.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Reformulado para:<br />
+<code>➺ É permitido chamar reforço desde que a comunicação não esteja interrompida e a equipe ainda não tenha chegado ao local, devendo utilizar bind previamente enviado.</code></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Ajuste gramatical e formalização.</li>
+</ul>
+</div>
+<h2 id="10-apos-a-acao-ser-finalizada-esperar-entre-10-a-15-minutos-para-realizar-uma-nova-emboscada"><code>10. ➺ Após a ação ser finalizada, esperar entre 10 á 15 minutos para realizar uma nova emboscada;</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Reformulado para:<br />
+<code>➺ Após a finalização da ação, aguarde entre 10 a 15 minutos antes de iniciar uma nova emboscada.</code></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Correção de pontuação e clareza do tempo de espera.</li>
+</ul>
+</div>
+<h2 id="11-permitido-somente-fazer-emboscada-apos-3-minutos-apos-uma-acao-comecar"><code>11. ➺ Permitido somente fazer emboscada após 3 minutos após uma ação começar.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Reformulado para:<br />
+<code>➺ É permitido iniciar uma emboscada somente 3 minutos após o início da ação em curso.</code></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Claridade na referência temporal e formalidade.</li>
+</ul>
+</div>
+<h2 id="12-proibido-subirusar-as-favelas-de-faccoes-podendo-somente-em-lugares-ja-determinados"><code>12. ➺ Proibido subir/usar as favelas de facções, podendo somente em lugares já determinados.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Reformulado para:<br />
+<code>➺ É proibido utilizar favelas de facções para emboscadas, exceto nos locais previamente autorizados.</code></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Padronização de termos e clareza.</li>
+</ul>
+</div>
+<h2 id="13-permitido-roubar-somente-apos-finalizado-a-acao-e-enquanto-o-samu-ainda-nao-tiver-chegado"><code>13. ➺ Permitido roubar somente após finalizado a ação e enquanto o samu ainda não tiver chegado.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Reformulado para:<br />
+<code>➺ É permitido realizar roubos apenas após a conclusão da ação, desde que o SAMU ainda não tenha chegado.</code></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Claridade e precisão.</li>
+</ul>
+</div>
+<h2 id="14-proibido-emboscada-com-refens-priorizando-a-vida-do-mesmo-negociar-antes-fugatirodinheiro"><code>14. ➺ Proibido emboscada, com reféns, priorizando a vida do mesmo. (Negociar antes Fuga/Tiro/Dinheiro.)</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Reformulado para:<br />
+<code>➺ Emboscadas com reféns são proibidas; a vida dos reféns deve ser priorizada. Negociações devem ocorrer previamente.</code></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Clareza, formalidade e segurança de RP.</li>
+</ul>
+</div>
+<h2 id="15-proibido-emboscada-com-mecanicos-que-estejam-fardados-e-com-o-caminhao"><code>15. ➺ Proibido emboscada com Mecânicos que estejam fardados e com o caminhão.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Mantido, ajustes mínimos de pontuação.</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Claridade e formalidade mantidas.</li>
+</ul>
+</div>
+<h2 id="16-proibido-pm-fazer-emboscada-somente-chamar-qrr"><code>16. ➺ Proibido PM fazer emboscada, somente chamar QRR.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Reformulado para:<br />
+<code>➺ Policiais não podem realizar emboscadas; apenas chamar QRR é permitido.</code></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Ajuste de formalidade e clareza da ação.</li>
+</ul>
+</div>
+<h2 id="17-obrigatorio-o-uso-de-binds-para-chamar-tropa-bem-antes-de-chegar-ao-local"><code>17. ➺ Obrigatório o uso de binds para chamar tropa bem antes de chegar ao local.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Mantido, sem alterações significativas.</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Cláusula essencial para coordenação.</li>
+</ul>
+</div>
+<h2 id="18-proibido-chamar-ajuda-pelo-twitter-ou-anonimo-permitido-usar-apenas-radinho"><code>18. ➺ Proibido chamar ajuda pelo twitter ou anônimo, permitido usar apenas radinho</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Reformulado para:<br />
+<code>➺ É proibido solicitar ajuda via Twitter ou de forma anônima; apenas rádios de comunicação são permitidos.</code></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Formalidade e clareza.</li>
+</ul>
+</div>
+<h2 id="19-proibido-chegar-reforco-apos-a-acao-ter-iniciado"><code>19. ➺ Proibido chegar reforço após a ação ter iniciado.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Mantido, ajustes mínimos.</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Clareza e consistência visual.</li>
+</ul>
+</div>
+<h2 id="tempo-de-banimento-em-caso-de-descumprimento-30-minutos-a-24-horas"><code>↬ Tempo de banimento em caso de descumprimento: 30 minutos a 24 horas.</code></h2>
+<div class="admonition success">
+<p class="admonition-title">Alteração</p>
+<ul>
+<li>Mantido, apenas padronização visual.</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Justificativa</p>
+<ul>
+<li>Consistência com outros documentos de regras.</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>

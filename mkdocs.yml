@@ -1,0 +1,44 @@
+site_name: Documentação de Regras (BMI)
+theme:
+  name: material
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  
+
+plugins:
+  - search
+
+nav:
+  - Início: index.md
+  - Regras Básicas: regras-basicas.md
+  - Regras Gerais: regras-gerais.md
+  - Regras da Cidade: regras-cidade.md
+  - RP de Criança: rp-crianca.md
+  - Regras de Corporação: regras-corporacao.md
+  - Regras de Facção: regras-faccao.md
+  - Regras do SAMU: regras-samu.md
+  - Regras – Helicóptero: regras-helicoptero.md
+  - Regras de Ações/Rua: regras-acoes-rua.md
+  - Assalto a Loja: regras-assalto-loja.md
+  - Assalto a Caixa Eletrônico: regras-assalto-caixa-eletronico.md
+  - Regras de Blitz: regras-blitz.md
+  - Regras de Perseguição: regras-perseguicao.md
+  - Regras de Emboscadas: regras-emboscadas.md
+  - Regras de Corrida Ilegal: regras-corrida-ilegal.md
+  - Regras de Tunning Ilegal: regras-tunning-ilegal.md
+  - Regras Cracolândia: regras-cracolandia.md
+  - Regras Banco Central: regras-banco-central.md
+  - Regras de Invasão: regras-invasao.md
+
